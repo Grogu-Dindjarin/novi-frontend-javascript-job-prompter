@@ -15,7 +15,7 @@ function updateElementTextContent(element, content) {
 }
 
 function updateElementWithInformationIfValid(elementId, information) {
-    const htmlElement = getHtmlElementById()
+    const htmlElement = getHtmlElementById(elementId);
     const message = `Ongeldige invoer, er bestaat geen html element met de id '${elementId}'.`;
 
     if (!htmlElement) {
